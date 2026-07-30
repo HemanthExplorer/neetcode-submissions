@@ -1,9 +1,8 @@
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:
-        a = set()
-        for num in nums:
-
-            if num in a:
-                return True
-            a.add(num)
-        return False
+        pointer = set(nums)
+        
+        if len(pointer) ==len(nums):
+            return False
+        else:
+            return True
