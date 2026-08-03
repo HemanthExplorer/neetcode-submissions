@@ -12,7 +12,5 @@ class Solution:
                 dic2[srt]+=1
             else:
                 dic2[srt]= 1
-        if dic1 == dic2:
-            return True
-        else:
-            return False
+        return dic1 == dic2
+            
